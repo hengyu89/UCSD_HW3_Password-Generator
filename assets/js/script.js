@@ -14,15 +14,15 @@ var typeName = [pwdLibrary.lowerCase, pwdLibrary.upperCase, pwdLibrary.number, p
 // This function will ask user to choose the type and length of password,
 // Then it will generate the password properly.
 function generatePassword() {
-  // Check whether length is proper. Check user chooses at least one type of password.
+  // "Gates" to determine user satisfied the conditions to generate the password. (Quit the loop)
   var pwdLengthPass = true;
   var conditionNumber = 0;
-  // Range is the whole types of password string that user chosen.
-  // TypeDisplay is the notification of password types which will show on the screen.
-  // Password is output.
+  // Range is the library that user chooses for generating password. Type Display is for summary. pwd is the output. 
   var pwdRange = "";
   var pwdTypeDisplay = "";
   var pwd = "";
+
+
   // Get the length of password from user. And it's limited between 8-128.
   while(pwdLengthPass){
     var pwdLengh = prompt("How many characters would you like to set to your password?\n (Tip: enter a number between 8 to 128)");
@@ -43,7 +43,7 @@ function generatePassword() {
         pwdTypeDisplay = pwdTypeDisplay.concat(pwdLibrary.typeNameStr[i], "\n");
       };
     };
-
+    // Determine whether quiz the loop. (Whether user chooses at least one condition) Or print out the summary.
     if(conditionNumber==0) {
       alert("You have to choose at least one password type in order to generate your Password.");
     } else {
