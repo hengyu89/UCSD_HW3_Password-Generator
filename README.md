@@ -21,10 +21,12 @@ The function will ask the following questions:
 
 * Once all conditions are chosen, it will show all conditions the user chosen at last for summary, so no worries if the user forgot what they chosen.
 
-## Screenshot with two moment.
+## Screenshot with two moment
 
-### The summary once user finishes chosen all conditions.
+### The summary once user finishes choosing all conditions. (What conditions and Length)
 ![This is the screenshot once user finishes all questions the function is asking. And then it will show the summary that user chosen.](./assets/images/screenshot1.png)
 
 ### The Result once the passwors is generated and shows on the screen.
+
+And Once you click the red button again and generate a new password, the old one will be replaced and disappear.
 ![This is the screenshot that what will the screen look like once the password is finished generating.](./assets/images/screenshot2.png)
